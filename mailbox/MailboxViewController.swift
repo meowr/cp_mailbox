@@ -19,12 +19,15 @@ class MailboxViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var archiveIconView: UIImageView!
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var feedView: UIImageView!
+    @IBOutlet var segmentedControl: [UISegmentedControl]!
+    @IBOutlet weak var inboxView: UIView!
     
     var messageOriginalCenter: CGPoint!
     var laterIconOriginalCenter: CGPoint!
     var archiveIconOriginalCenter: CGPoint!
     var mainViewOriginalCenter: CGPoint!
     var feedViewOriginalCenter: CGPoint!
+    var inboxOriginalCenter: CGPoint!
     var firstThreshold: CGFloat!
     var secondThreshold: CGFloat!
     var fullThreshold: CGFloat!
@@ -46,6 +49,7 @@ class MailboxViewController: UIViewController, UIGestureRecognizerDelegate {
         archiveIconOriginalCenter = archiveIconView.center
         mainViewOriginalCenter = mainView.center
         feedViewOriginalCenter = feedView.center
+        inboxOriginalCenter = inboxView.center
         isMenuOpen = false
 
         var edgeGesture = UIScreenEdgePanGestureRecognizer(target: self, action: "onEdgePan:")
@@ -214,6 +218,25 @@ class MailboxViewController: UIViewController, UIGestureRecognizerDelegate {
             }, completion: nil)
     }
 
+    @IBAction func onSegmentedControl(sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+            case 0:
+                UIView.animateWithDuration(0.4, delay:0, options: [] ,animations: { () -> Void in
+                    self.inboxView.center.x = self.inboxOriginalCenter.x + 320
+                    }, completion: nil);
+
+            case 1:
+                UIView.animateWithDuration(0.4, delay:0, options: [] ,animations: { () -> Void in
+                    self.inboxView.center.x = self.inboxOriginalCenter.x
+                    }, completion: nil);
+            case 2:
+                UIView.animateWithDuration(0.4, delay:0, options: [] ,animations: { () -> Void in
+                    self.inboxView.center.x = self.inboxOriginalCenter.x - 320
+                    }, completion: nil);
+            default: 
+                break; 
+        }
+    }
     /*
     // MARK: - Navigation
 

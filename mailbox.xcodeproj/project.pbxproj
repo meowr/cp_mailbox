@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61D91DE11C7AD0B800769AB7 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D91DE01C7AD0B800769AB7 /* ComposeViewController.swift */; };
 		61F32F501C782B0B00F26E27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F32F4F1C782B0B00F26E27 /* AppDelegate.swift */; };
 		61F32F521C782B0B00F26E27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F32F511C782B0B00F26E27 /* ViewController.swift */; };
 		61F32F551C782B0B00F26E27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61F32F531C782B0B00F26E27 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61D91DE01C7AD0B800769AB7 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		61F32F4C1C782B0B00F26E27 /* mailbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mailbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F32F4F1C782B0B00F26E27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61F32F511C782B0B00F26E27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				61F32F4F1C782B0B00F26E27 /* AppDelegate.swift */,
 				61F32F511C782B0B00F26E27 /* ViewController.swift */,
 				61F32F531C782B0B00F26E27 /* Main.storyboard */,
+				61D91DE01C7AD0B800769AB7 /* ComposeViewController.swift */,
 				61F32F631C782C9C00F26E27 /* MailboxViewController.swift */,
 				61F32F581C782B0B00F26E27 /* LaunchScreen.storyboard */,
 				61F32F5B1C782B0B00F26E27 /* Info.plist */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61D91DE11C7AD0B800769AB7 /* ComposeViewController.swift in Sources */,
 				61F32F661C7839CD00F26E27 /* Common.swift in Sources */,
 				61F32F521C782B0B00F26E27 /* ViewController.swift in Sources */,
 				61F32F501C782B0B00F26E27 /* AppDelegate.swift in Sources */,
@@ -292,6 +296,7 @@
 				61F32F601C782B0B00F26E27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
